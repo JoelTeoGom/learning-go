@@ -117,7 +117,19 @@ Concurrency in Go is a powerful feature that enables developers to write efficie
 
 2. Read-Only and Send-Only Channels: You can define channels to be read-only or send-only. For example, a channel defined as <-chan can only be used for receiving messages, while a channel defined as chan<- can only send messages. This provides a way to enforce stricter communication patterns and improve code clarity.
 
+```go
 
+func worker(id int, jobs <-chan int, results chan<- int) {
+	for n := range jobs {
+		fmt.Printf("Worker %d calculating fib(%d)\n", id, n)
+		results <- fib(n)
+	}
+}
 
+```
+jobs <-chan int:
+Type: This is a receive-only channel of type int. The <-chan indicates that this channel is used only for receiving values.
 
+results chan<- int:
+Type: This is a send-only channel of type int. The chan<- indicates that this channel is used only for sending values.
 
