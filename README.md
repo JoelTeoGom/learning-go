@@ -10,7 +10,7 @@ Welcome to my Go learning repository! Here I document and store code examples an
 - [Networking](./Networking/README.md): Learn basic TCP/IP networking, including client-server communication.
 - [Error Handling](./ErrorHandling/README.md): Effective strategies for handling errors in Go, including custom error types.
 - [Testing](./Testing/README.md): Unit testing, mock testing, and other testing strategies in Go.
-- [Naming Conventions](./NamingConvention/README.md): Essential naming conventions in Go for writing clean, readable, and maintainable code.
+- [Naming Conventions](./NamingConventions/README.md): Essential naming conventions in Go for writing clean, readable, and maintainable code.
 
 
 ## How to Use
