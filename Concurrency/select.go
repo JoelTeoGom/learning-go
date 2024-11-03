@@ -31,6 +31,13 @@ func main() {
 			fmt.Println(msg2)
 		}
 
+		{
+			
+			var a int
+			a = 4
+		
+		}
+
 		/*
 			Blocking on c1:
 			The line msg1 := <-c1 will block until the channel c1 receives a message.
